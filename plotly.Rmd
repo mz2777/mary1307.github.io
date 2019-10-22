@@ -40,7 +40,7 @@ airbnb %>%
   mutate(hover_text = str_c("Price: $", price, '\nRating: ', rating)) %>% 
   plot_ly(x = ~longitude, y = ~latitude, color = ~price,
           text = ~hover_text,
-          type = "scatter", mode = "marker", alpha = 0.5)
+          type = "scatter", mode = "markers", alpha = 0.5)
 ```
 
 
